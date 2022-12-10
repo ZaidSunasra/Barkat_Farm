@@ -1,0 +1,382 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*Styling Navbar*/
+.navbar{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    background-color: #a7a7a0;
+    background-image: linear-gradient(90deg, #a7a7a0 26%, #15ad97 100%);
+}
+.navbar-left img{
+    height: 100px;
+    width: 100px;
+}
+.navbar-centre{
+    width: 40%;
+    border: 5px solid black;
+    border-radius: 40px;
+    padding: 1em;
+}
+.navbar-centre form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-centre input{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    width:80% ;
+    color:antiquewhite;
+    font-size: 30px;
+}
+input::placeholder{
+    color: black;
+    font-size: large;
+}
+.navbar-centre button{
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+    align-items: center;
+    background-color: transparent;
+}
+.navbar-centre button img{
+    height: 60%;
+    width: 60%;
+}
+.navbar-right{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-right a{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    width: 40%;
+}
+.navbar-right a:hover{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    transform: scale(1.2);
+}
+.navbar-right img{
+    height: 100%;
+    width: 30%;
+}
+/*Styling Container */
+.container{
+    background-image: url(Images/scene.jpeg);
+    min-height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container h1{
+    font-size: 50px;
+    background: rgba(0, 0, 0,0.2);
+    backdrop-filter: blur(1px);
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: antiquewhite;
+    box-shadow: 15px 15px 20px 0px rgba(0, 0, 0,0.7);
+}
+/*Styling Product Section */
+.products{
+    background-color: #a7a7a0;
+    background-image: linear-gradient(90deg, #a7a7a0 26%, #15ad97 100%);   
+    width: 100%;
+    padding-top: 20px;
+    border: solid black 2px;
+    padding-bottom: 20px;
+}
+.products h1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+.all-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 10px;
+}
+.individual-products{
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 15px 15px 20px 0px rgba(0, 0, 0,0.7);
+    height:300px;
+    display: flex;
+    justify-content:space-between;
+}
+.individual-products:nth-child(1){
+    background-image: url(Images/fruits.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.individual-products:nth-child(2){
+    background-image: url(Images/vegetables.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.individual-products:nth-child(3){
+    background-image: url(Images/dairy\ products.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.individual-products:nth-child(4){
+    background-image: url(Images/meat.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.individual-products:nth-child(5){
+    background-image: url(Images/honey.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.individual-products p{
+    font-size: 50px;
+    background: rgba(0, 0, 0,0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 15px 15px 20px 0px rgba(0, 0, 0,0.7);
+    text-align: center;
+    margin: auto;
+}
+.individual-products p:hover{
+    background-color: black;
+    transform: scale(1.1);
+}
+.individual-products a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.individual-products a:hover{
+    text-decoration: underline;
+}
+/* Styling Reviews Section */
+.reviews{
+    background-color: #a7a7a0;
+    background-image: linear-gradient(90deg, #a7a7a0 26%, #15ad97 100%);   
+    width: 100%;
+    min-height: 50vh;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.reviews h1{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+.review-card{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0,0.1);
+    backdrop-filter: blur(5px);
+}
+.review-image{
+    width: 15%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.review-image img{
+    height: 80%;
+    width: 100%;
+    
+}
+.review-words{
+    width: 70%;
+    height: 100%;
+}
+.review-words h5{
+    text-align: right;
+    padding-top: 5px;
+    text-decoration: underline;
+}
+.review-card span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #a7a7a0;
+    background-image: linear-gradient(90deg, #a7a7a0 26%, #15ad97 100%);  
+}
+.footer h3{
+   padding-bottom: 1em;
+   padding-top: 1em;
+   color: black;
+}
+.footer li{
+    list-style: none;
+    padding-top: 0.5em;
+}
+.footer a{
+    text-decoration: none;
+    color:black;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+/*------------------STYLING FOR MOBILE PHONE AND TABLET------------------*/
+@media (min-width: 350px) and (max-width: 1000px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-centre{
+        width: 80%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .navbar-right{
+        width: 60%;
+        margin: 10px;
+    }
+    .container h1{
+        margin: auto;
+        height: auto;
+        width: 90%;
+        font-size: 40px;
+        border-radius: 40px;
+    }
+    .all-products{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .reviews{
+        padding-bottom: 20px;
+    }
+    .reviews h1{
+        font-size:1.5em;
+        margin-bottom: 1em;
+    }
+    .review-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:80%;
+        padding: 10px;
+    }
+    .reviews span{
+        padding: 15px 0px;
+    }
+    .review-image{
+        padding: 10px 0px;
+        width: 40%;
+    }
+    .review-words{
+        padding: 10px 0px;
+        width: 90%;
+    }
+    .review-words h5{
+        text-align: center;
+    }
+}
+/*------------------STYLING FOR VERY SMALL PHONE------------------*/
+@media (max-width: 350px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-centre{
+        width: 80%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .navbar-right{
+        width: 60%;
+        margin: 10px;
+    }
+    .container h1{
+        margin: auto;
+        height: auto;
+        width: 90%;
+        font-size: 35px;
+        border-radius: 25px;
+    }
+    .products h1{
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 20px;
+        text-decoration: underline;
+    }
+    .all-products{
+        display:flex;
+        flex-direction: column;
+    }
+    .individual-products p{
+        font-size: 30px;
+        background: rgba(0, 0, 0,0.1);
+        backdrop-filter: blur(10px);
+        box-shadow: 15px 15px 20px 0px rgba(0, 0, 0,0.7);
+        text-align: center;
+        margin: auto;
+    }
+    .reviews{
+        padding-bottom: 20px;
+    }
+    .reviews h1{
+        font-size:1.3em;
+        margin-bottom: 1em;
+    }
+    .review-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:80%;
+        padding: 10px;
+    }
+    .reviews span{
+        padding: 15px 0px;
+    }
+    .review-image{
+        padding: 10px 0px;
+        width: 40%;
+    }
+    .review-words{
+        padding: 10px 0px;
+        width: 90%;
+    }
+    .review-words h5{
+        text-align: center;
+    }
+}
+/*------------------STYLING FOR 4K SCREENS------------------*/
+@media (min-width:1800px){
+    .review-words{
+        font-size: 35px;
+    }
+    .footer{
+        font-size: 35px;
+    }
+    .navbar-right a{
+        font-size: 25px;
+    }
+}
