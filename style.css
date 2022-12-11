@@ -299,6 +299,11 @@ input::placeholder{
         text-align: center;
     }
 }
+@media (min-width: 350px) and (max-width: 400px){
+    .container h1{
+        font-size: 30px;
+    }
+}
 /*------------------STYLING FOR VERY SMALL PHONE------------------*/
 @media (max-width: 350px){
     .navbar{
@@ -318,8 +323,8 @@ input::placeholder{
         margin: auto;
         height: auto;
         width: 90%;
-        font-size: 35px;
-        border-radius: 25px;
+        font-size: 25px;
+        border-radius: 20px;
     }
     .products h1{
         font-size: 30px;
